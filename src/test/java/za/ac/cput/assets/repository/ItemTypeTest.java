@@ -40,7 +40,7 @@ public class ItemTypeTest extends AbstractTestNGSpringContextTests{
                 .createItem("barcode",name,expireDate,null/*itemDetailList*/);
         itemList.add(monitor);
         itemType = ItemTypeFactory
-                .createItemType( code, "Hardware", null);
+                .createItemType( code, "Hardware", itemList);
         repository.save(itemType);
         id=itemType.getId();
         //@Letiger:Negative Test
@@ -77,7 +77,7 @@ public class ItemTypeTest extends AbstractTestNGSpringContextTests{
         //@Letiger:Equals Test
         Assert.assertEquals(id, itemType.getId(), "Item Type create test has passed 100%");
     }
-    //@Test(dependsOnMethods = "update")
+    @Test(dependsOnMethods = "update")
     public void delete() throws Exception{
         repository.delete(id);
         ItemType deleted = repository.findOne(id);

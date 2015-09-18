@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="19" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="41468" started-at="2015-09-18T12:09:50Z" finished-at="2015-09-18T12:10:32Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="41468" started-at="2015-09-18T12:09:50Z" finished-at="2015-09-18T12:10:32Z">
+      <class name="za.ac.cput.assets.repository.ItemTypeTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="6" started-at="2015-09-18T14:10:27Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="create()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="create" duration-ms="413" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="read()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="read" duration-ms="622" started-at="2015-09-18T14:10:30Z" depends-on-methods="za.ac.cput.assets.repository.ItemTypeTest.create" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="update()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="update" duration-ms="102" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.ItemTypeTest.read" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="delete" duration-ms="105" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.ItemTypeTest.update" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.ItemTypeTest@1050f8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.ItemTypeTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- za.ac.cput.assets.repository.ItemTypeTest -->
+      <class name="za.ac.cput.assets.repository.DepartmentTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="20" started-at="2015-09-18T14:09:50Z" finished-at="2015-09-18T14:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="34749" started-at="2015-09-18T14:09:50Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-09-18T14:10:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:25Z" finished-at="2015-09-18T14:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="create()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="create" duration-ms="1723" started-at="2015-09-18T14:10:25Z" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="read()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="read" duration-ms="1520" started-at="2015-09-18T14:10:28Z" depends-on-methods="za.ac.cput.assets.repository.DepartmentTest.create" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="update()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="update" duration-ms="265" started-at="2015-09-18T14:10:30Z" depends-on-methods="za.ac.cput.assets.repository.DepartmentTest.read" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="delete" duration-ms="102" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.DepartmentTest.update" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.DepartmentTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:za.ac.cput.assets.repository.DepartmentTest@6f404e]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- za.ac.cput.assets.repository.DepartmentTest -->
+      <class name="za.ac.cput.assets.repository.OwnerCrudTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="7" started-at="2015-09-18T14:10:27Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.OwnerCrudTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="setUp" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="create()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="create" duration-ms="215" started-at="2015-09-18T14:10:27Z" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.OwnerCrudTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.OwnerCrudTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="read()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="read" duration-ms="137" started-at="2015-09-18T14:10:30Z" depends-on-methods="za.ac.cput.assets.repository.OwnerCrudTest.create" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="setUp" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.OwnerCrudTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="setUp" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.OwnerCrudTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="update()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="update" duration-ms="94" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.OwnerCrudTest.read" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.OwnerCrudTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:za.ac.cput.assets.repository.OwnerCrudTest@aa9f08]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- za.ac.cput.assets.repository.OwnerCrudTest -->
+      <class name="za.ac.cput.assets.repository.TypeCrudTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="8" started-at="2015-09-18T14:10:28Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="create()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="create" duration-ms="214" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="read()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="read" duration-ms="4" started-at="2015-09-18T14:10:30Z" depends-on-methods="za.ac.cput.assets.repository.TypeCrudTest.create" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="update()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="update" duration-ms="378" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.TypeCrudTest.read" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="delete" duration-ms="109" started-at="2015-09-18T14:10:32Z" depends-on-methods="za.ac.cput.assets.repository.TypeCrudTest.update" finished-at="2015-09-18T14:10:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:32Z" finished-at="2015-09-18T14:10:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-09-18T14:10:32Z" finished-at="2015-09-18T14:10:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.TypeCrudTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:za.ac.cput.assets.repository.TypeCrudTest@693d23]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:32Z" finished-at="2015-09-18T14:10:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- za.ac.cput.assets.repository.TypeCrudTest -->
+      <class name="za.ac.cput.assets.repository.RegionTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="20" started-at="2015-09-18T14:10:28Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="create()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="create" duration-ms="155" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:28Z" finished-at="2015-09-18T14:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.create() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="read()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="read" duration-ms="5" started-at="2015-09-18T14:10:30Z" depends-on-methods="za.ac.cput.assets.repository.RegionTest.create" finished-at="2015-09-18T14:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:30Z" finished-at="2015-09-18T14:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.read() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="update()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="update" duration-ms="141" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.RegionTest.read" finished-at="2015-09-18T14:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.update() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="delete" duration-ms="55" started-at="2015-09-18T14:10:31Z" depends-on-methods="za.ac.cput.assets.repository.RegionTest.update" finished-at="2015-09-18T14:10:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:31Z" finished-at="2015-09-18T14:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:32Z" finished-at="2015-09-18T14:10:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void za.ac.cput.assets.repository.RegionTest.delete() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:za.ac.cput.assets.repository.RegionTest@12b9ffd]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-09-18T14:10:32Z" finished-at="2015-09-18T14:10:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- za.ac.cput.assets.repository.RegionTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

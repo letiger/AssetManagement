@@ -30,7 +30,7 @@ public class ItemTypePage {
 
     //Get ItemType by id
     @RequestMapping(value =  "/{id}", method = RequestMethod.GET)
-    public ItemType getItemType(@PathVariable Long id, HttpServletResponse response) throws IOException{
+    public ItemType getItemType(@PathVariable Long id, HttpServletResponse response){
         try{
             ItemType itemType = service.find(id);
             if (itemType == null){
@@ -40,9 +40,15 @@ public class ItemTypePage {
                 return itemType;
             }
         }catch (Exception e){
-            System.out.println("ErrorCode for GetItemType by id:\n"+e);
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
-            return null;
+            try {
+                System.out.println("ErrorCode for GetItemType by id:\n"+e);
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
+                return null;
+            }catch (IOException ioe){
+                System.out.println("ErrorCode for GetItemType by id:\n"+ioe);
+                return null;
+            }
+
         }
     }
     @RequestMapping(value =  "/add" ,method = RequestMethod.POST, consumes= MediaType.APPLICATION_JSON_VALUE)

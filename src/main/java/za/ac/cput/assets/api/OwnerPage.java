@@ -30,7 +30,7 @@ public class OwnerPage {
     //Get Owner by id
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Owner getOwner(@PathVariable Long id,
-                          HttpServletResponse response)throws IOException{
+                          HttpServletResponse response){
         try {
             Owner owner = service.find(id);
             if (owner==null){
@@ -40,8 +40,15 @@ public class OwnerPage {
                 return owner;
         }catch (Exception e){
             System.out.println("ErrorCode for GetOwner by id:\n"+e);
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
-            return null;
+            try {
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
+                return null;
+            }catch (IOException ioe){
+                System.out.println("ErrorCode for GetOwner by id:\n"+ioe);
+                return null;
+            }
+
+
         }
     }
     @RequestMapping(value="/add", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)

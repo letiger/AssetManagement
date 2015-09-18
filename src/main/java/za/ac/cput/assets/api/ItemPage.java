@@ -35,7 +35,7 @@ public class ItemPage {
     //Get items by owner_id
     @RequestMapping(value = "/onwer/{id}", method = RequestMethod.GET)
     public List<Item> getItemByOwner(@PathVariable Long id,
-                               HttpServletResponse response) throws IOException {
+                               HttpServletResponse response){
         List<Item> itemList = new ArrayList<>();
         try {
             Owner owner = ownerService.find(id);
@@ -50,9 +50,14 @@ public class ItemPage {
             }
                 return itemList;
         }catch (Exception e){
-            System.out.println("ErrorCode for GetItemByOwner by id:\n"+e);
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
-            return null;
+            try {
+                System.out.println("ErrorCode for GetItemByOwner by id:\n" + e);
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
+                return null;
+            }catch ( IOException ioe ){
+                System.out.println("ErrorCode for GetItemByOwner by id:\n" + ioe);
+                return null;
+            }
         }
     }
 
