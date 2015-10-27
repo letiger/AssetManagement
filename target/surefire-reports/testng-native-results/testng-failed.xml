@@ -6,47 +6,37 @@
       <class name="za.ac.cput.assets.repository.TypeCrudTest">
         <methods>
           <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
+          <include name="create"/>
           <include name="springTestContextAfterTestMethod"/>
+          <include name="update"/>
+          <include name="read"/>
+          <include name="delete"/>
         </methods>
       </class> <!-- za.ac.cput.assets.repository.TypeCrudTest -->
+      <class name="za.ac.cput.assets.repository.RegionTest">
+        <methods>
+          <include name="update"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="read"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="delete"/>
+          <include name="create"/>
+        </methods>
+      </class> <!-- za.ac.cput.assets.repository.RegionTest -->
       <class name="za.ac.cput.assets.repository.OwnerCrudTest">
         <methods>
           <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="tearDown"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
+          <include name="read"/>
           <include name="springTestContextAfterTestMethod"/>
-          <include name="setUp"/>
+          <include name="create"/>
+          <include name="update"/>
         </methods>
       </class> <!-- za.ac.cput.assets.repository.OwnerCrudTest -->
-      <class name="za.ac.cput.assets.repository.RegionTest">
-        <methods>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- za.ac.cput.assets.repository.RegionTest -->
-      <class name="za.ac.cput.assets.repository.DepartmentTest">
-        <methods>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- za.ac.cput.assets.repository.DepartmentTest -->
       <class name="za.ac.cput.assets.repository.ItemTypeTest">
         <methods>
           <include name="springTestContextAfterTestClass"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="create"/>
-          <include name="springTestContextBeforeTestMethod"/>
           <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestMethod"/>
           <include name="read"/>

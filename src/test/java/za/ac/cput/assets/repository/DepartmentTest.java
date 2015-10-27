@@ -5,10 +5,10 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import za.ac.cput.assets.App;
 import za.ac.cput.assets.conf.factory.DepartmentFactory;
 import za.ac.cput.assets.domain.Department;
+import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +22,7 @@ public class DepartmentTest extends AbstractTestNGSpringContextTests{
     private Long id;
     @Autowired
     DepartmentRepository repository;
-    private Department deparment;
+    private Department department;
     private String code  = "D1";
 
     @Test
@@ -30,12 +30,12 @@ public class DepartmentTest extends AbstractTestNGSpringContextTests{
         Map<String,String> departmentValues = new HashMap<String,String>();
         departmentValues.put("code",code);
         departmentValues.put("name","N/A");
-        deparment = DepartmentFactory
+        department = DepartmentFactory
                 .createOwnerType(departmentValues);
         //Test object in Memory
-        Assert.assertEquals(code, deparment.getCode());
-        repository.save(deparment);
-        id = deparment.getId();
+        Assert.assertEquals(code, department.getCode());
+        repository.save(department);
+        id = department.getId();
     }
     @Test(dependsOnMethods = "create")
     public void read() throws Exception{

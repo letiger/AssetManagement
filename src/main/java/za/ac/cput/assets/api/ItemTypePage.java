@@ -1,15 +1,16 @@
 package za.ac.cput.assets.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import za.ac.cput.assets.domain.ItemType;
-import za.ac.cput.assets.model.ItemTypeResource;
 import za.ac.cput.assets.services.ItemTypeService;
 
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -20,58 +21,37 @@ import java.util.List;
 public class ItemTypePage {
     @Autowired
     private ItemTypeService service;
-
-
-    //Get all ItemTypes
-    @RequestMapping(value =  "/items", method = RequestMethod.GET)
-    public List<ItemType> getItemTypes(){
-        return service.getAllTypes();
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<ItemType>> getAllRooms() {
+        List<ItemType> itemList = service.getAllTypes();
+        return new ResponseEntity<List<ItemType>>(itemList, HttpStatus.OK);
     }
+    @RequestMapping(value = "/create", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> createItemType(@RequestParam ItemType itemType) {
+        boolean status=false;
 
-    //Get ItemType by id
-    @RequestMapping(value =  "/{id}", method = RequestMethod.GET)
-    public ItemType getItemType(@PathVariable Long id, HttpServletResponse response){
-        try{
-            ItemType itemType = service.find(id);
-            if (itemType == null){
-                response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-                return null;
-            }else{
-                return itemType;
-            }
-        }catch (Exception e){
-            try {
-                System.out.println("ErrorCode for GetItemType by id:\n"+e);
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
-                return null;
-            }catch (IOException ioe){
-                System.out.println("ErrorCode for GetItemType by id:\n"+ioe);
-                return null;
-            }
-
-        }
+        status = service.createItemType(itemType);// .createRoom(roomNumber, roomType, roomView, roomPrice);
+        if(status)
+            return new ResponseEntity<>(status, HttpStatus.OK);
+        return null;
     }
-    @RequestMapping(value =  "/add" ,method = RequestMethod.POST, consumes= MediaType.APPLICATION_JSON_VALUE)
-    public void addItemType(@Valid
-                            @RequestBody
-                            ItemTypeResource itemTypeResource,
-                            HttpServletResponse response) throws IOException {
-        try{
-            ItemType itemType = new ItemType
-                    .Builder(itemTypeResource.getCode())
-                    .name(itemTypeResource.getName())
-                    .itemList(null)
-                    .build();
+    @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> updateItemType(@RequestParam ItemType itemType) {
+        boolean status = false;
 
-            service.createItemType(itemType);
-        }catch(Exception e){
-            System.out.println("Error Message for CreateItemType \n" +e);
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
-        }
+        status = service.updateItemType(itemType);
+        if(status)
+            return new ResponseEntity<Boolean>(status, HttpStatus.OK);
+        return  null;
     }
+    @RequestMapping(value = "/delete", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> deleteItemType(@RequestParam ItemType itemType)
+    {
+        boolean status = false;
 
-    @RequestMapping(value =  "/delete/{id}", method = RequestMethod.GET)
-    public void deleteItemType(@PathVariable Long id, HttpServletResponse response) throws IOException{
-            service.deleteItemType(id);
+        status = service.deleteItemType(itemType);
+        if(status)
+            return new ResponseEntity<Boolean>(status, HttpStatus.OK);
+        return null;
     }
 }

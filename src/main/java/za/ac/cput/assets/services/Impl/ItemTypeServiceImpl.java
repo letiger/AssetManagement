@@ -16,6 +16,18 @@ import java.util.List;
 public class ItemTypeServiceImpl implements ItemTypeService{
     @Autowired
     ItemTypeRepository repository;
+    @Autowired
+    public ItemType search(Long id){
+        ItemType match;
+        Iterable<ItemType> values = repository.findAll();
+        for (ItemType value : values) {
+            if(value.getId().equals(id)) {
+                match = value;
+                return match;
+            }
+        }
+        return null;
+    }
     @Override
     public List<ItemType> getAllTypes(){
         List<ItemType> itemTypes = new ArrayList<>();
@@ -26,19 +38,68 @@ public class ItemTypeServiceImpl implements ItemTypeService{
         }
         return itemTypes;
     }
+    @Override
+    public boolean createItemType( ItemType itemType) {
+        boolean trigger = false;
+        Iterable<ItemType> itemTypes = repository.findAll();
+        for (ItemType current : itemTypes) {
+            if(current.getName() == itemType.getName())
+            {
+                trigger =  true;
+                break;
+            }
+        }
+        if (trigger)
+        {
+            repository.save(itemType);
+            return trigger;
+        }
 
-    @Override
-    public void createItemType(ItemType itemType) {
-        repository.save(itemType);
+        //A duplicate record exist
+        return trigger;
     }
+    @Override
+    public ItemType readItemType ( ItemType itemType) {
 
-    @Override
-    public ItemType find(Long id) {
-        ItemType search = repository.findOne(id);
-        return search;
+        ItemType search = repository.findOne(itemType.getId());
+        if(search == null)
+            return search;
+        //Record not fount
+        return null;
     }
     @Override
-    public void deleteItemType(Long id){
-        repository.delete(id);
+    public boolean updateItemType( ItemType itemType) {
+        boolean trigger = false;
+        Iterable<ItemType> itemTypes = repository.findAll();
+        for (ItemType current : itemTypes) {
+            if (current.getName().equalsIgnoreCase(itemType.getName()))
+            {
+                trigger = true;
+                break;
+            }
+        }
+        if (trigger){
+            repository.save(itemType);
+            return trigger;
+        }
+        //No record exist
+        return trigger;
+    }
+    @Override
+    public boolean deleteItemType( ItemType itemType) {
+        boolean trigger = false;
+        Iterable<ItemType> itemTypes = repository.findAll();
+        for (ItemType current : itemTypes) {
+            if ( current.getName().equalsIgnoreCase(itemType.getName()) )
+            {
+                trigger = true;
+                break;
+            }
+        }
+        if (trigger)
+        {
+            repository.delete(itemType);
+        }
+        return trigger;
     }
 }

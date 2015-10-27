@@ -31,6 +31,9 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
   <component name="IdProvider" IDEtalkID="780C3137C1BB485FD269C400E8E527FE" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">

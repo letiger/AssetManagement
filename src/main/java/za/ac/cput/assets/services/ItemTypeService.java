@@ -9,9 +9,10 @@ import java.util.List;
  */
 public interface ItemTypeService {
     List<ItemType> getAllTypes();
-    ItemType find(Long id);
-    void createItemType(ItemType itemType);
-    void deleteItemType(Long id);
+    boolean  createItemType ( ItemType itemType);
+    ItemType readItemType   ( ItemType itemType);
+    boolean  updateItemType ( ItemType itemType);
+    boolean  deleteItemType ( ItemType itemType);
 
 
 }

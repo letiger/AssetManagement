@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TP3_PROJECT:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="za.ac.cput.assets-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="TP3_PROJECT:war exploded" />
+    </root>
+  </artifact>
+</component>
